@@ -42,7 +42,7 @@ public class TaskCh09N185 {
         String woRight = expression.replaceAll("[)]", "");
         // открывающие
         String woLeft = expression.replaceAll("[(]", "");
-        if (woRight == woLeft) {
+        if (woRight.length() == woLeft.length()) {
             System.out.println("Да,скобки расставлены правильно");
         } else if (woRight.length() < woLeft.length()) {
             // Если число закрывающих скобок больше числа открывающих
